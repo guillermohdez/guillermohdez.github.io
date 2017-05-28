@@ -1,0 +1,131 @@
+@import url(reset.css);
+
+@font-face {
+	font-family: Luthier;
+	src: url('fonts/Luthier-Regular.ttf');
+}
+@font-face {
+	font-family: Luthier;
+	src: url('fonts/Luthier-Bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: Luthier;
+	src: url('fonts/Luthier-Italic.ttf');
+	font-style: italic;
+}
+@font-face {
+	font-family: Luthier;
+	src: url('fonts/Luthier-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+body {
+	background-color: #254063;
+	font-family: Luthier;
+	margin-top: 2em;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	color: #fff;
+}
+
+b {
+	font-weight: bold;
+}
+
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 1.12em;
+	line-height: 1.25em;
+	padding-bottom: 1.3em;
+}
+
+h1 {
+	padding-top: 0.3em;
+	padding-bottom: 0.5em;
+	font-size: 3em;
+	line-height: 1em;
+}
+
+ul {
+	list-style: none;
+	font-size: 1.1em;
+	line-height: 2em;
+}
+
+li {
+	list-style-position: inside;
+	text-indent: -1.7em;
+	padding-left: 1.7em;
+	padding-right: 1.7em;
+}
+
+li:before {
+	content: "\27F6 \0020";
+	color: #5174a1;
+}
+
+.header {
+	color: #ffc702;
+	padding-bottom: 0.5em;
+}
+
+.footer {
+	padding-top: 1.6em;
+	color: #5174a1;
+	font-size: 0.8em;
+}
+
+
+@media only screen and (min-width: 330px) {
+	.footer {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 880px) {
+	ul {
+		font-size: 1.2em;
+		line-height: 2em;
+	}
+	li {
+		display: block;
+	}
+	body {
+		margin-top: 4.5em;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	h1 {
+		padding-top: 0.55em;
+		padding-bottom: 0.5em;
+		font-size: 5em;
+		line-height: 0.9em;
+	}
+	p {
+		font-size: 1.5em;
+		line-height: 1.2em;
+		padding-bottom: 1.3em;
+	}
+	.columnLeft {
+		float: left;
+		width: 50%;
+	}
+	.columnRight {
+		float: right;
+		width: 50%;
+	}
+	.lists {
+		display: inline-block;
+		width: 100%;
+	}
+	.footer {
+		padding-top: 1.6em;
+		font-size: 1.2em;
+	}
+}
